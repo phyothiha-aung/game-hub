@@ -6,7 +6,7 @@ import GameCardContainer from "./GameCardContainer";
 
 const GameGrid = () => {
   const { data, error, isLoading } = useGames();
-  const skeletons = [1, 2, 3, 4, 5, 6];
+  const skeletons = [1, 2, 3, 4, 5, 6, 7, 8];
 
   return (
     <>
@@ -16,9 +16,9 @@ const GameGrid = () => {
           sm: 1,
           md: 2,
           lg: 3,
-          xl: 3,
+          xl: 4,
         }}
-        spacing={10}
+        spacing={4}
         padding={{
           sm: 2,
           md: 4,
