@@ -3,7 +3,7 @@ import GameCardContainer from "./GameCardContainer";
 const GameCardSkeleton = () => {
   return (
     <GameCardContainer>
-      <Card>
+      <Card borderRadius={10} overflow="hidden">
         <Skeleton height={"200px"} />
         <CardBody>
           <SkeletonText />
