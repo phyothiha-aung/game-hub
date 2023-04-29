@@ -1,3 +1,3 @@
 # game-hub
 
-<a href="https://gamehub-rawg.netlify.app/">Demo Link </a>
+<a href="https://gamehub-rawgapi.netlify.app/">Demo Link </a>
