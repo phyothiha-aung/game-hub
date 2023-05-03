@@ -11,7 +11,7 @@ const Rating = ({ rating }: RatingProps) => {
     <HStack marginBottom={3}>
       {stars.map((star) => (
         <span key={star} style={{ color: "gold" }}>
-          {rating > star ? <AiFillStar /> : <AiOutlineStar />}
+          {star > rating ? <AiOutlineStar /> : <AiFillStar />}
         </span>
       ))}
     </HStack>
