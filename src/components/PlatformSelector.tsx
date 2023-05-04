@@ -5,14 +5,18 @@ import { Platform } from "../services/api-client";
 
 interface PlatformDelectorProps {
   onSelectPlatform: (platform: Platform | null) => void;
-  selectedPlatform: Platform | null;
+  selectedPlatformId?: number;
 }
 
 const PlatformSelector = ({
   onSelectPlatform,
-  selectedPlatform,
+  selectedPlatformId,
 }: PlatformDelectorProps) => {
   const { data, error } = usePlatforms();
+
+  const selectedPlatform = data.results.find(
+    (p) => p.id === selectedPlatformId
+  );
 
   if (error) return null;
 
