@@ -27,7 +27,7 @@ const HomePage = () => {
           paddingLeft={{
             sm: 2,
             md: 4,
-            lg: 0,
+            lg: 2,
           }}
         >
           <GameHeading />
