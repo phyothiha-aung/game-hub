@@ -29,10 +29,7 @@ const GameGrid = () => {
           xl: 4,
         }}
         spacing={5}
-        padding={{
-          sm: 2,
-          md: 4,
-        }}
+        padding={2}
         justifyContent="center"
       >
         {isLoading && skeletons.map((s) => <GameCardSkeleton key={s} />)}
