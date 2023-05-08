@@ -10,12 +10,12 @@ interface GameCardProps {
 }
 const GameCard = ({ game }: GameCardProps) => {
   return (
-    <Link to={`/games/${game.slug}`}>
-      <Card
-        borderRadius={10}
-        overflow="hidden"
-        _hover={{ transform: "scale(1.03)", transition: "all 0.15s ease-in" }}
-      >
+    <Card
+      borderRadius={10}
+      overflow="hidden"
+      _hover={{ transform: "scale(1.03)", transition: "all 0.15s ease-in" }}
+    >
+      <Link to={`/games/${game.slug}`}>
         <Image src={getCroppedImageUrl(game.background_image)} />
         <CardBody>
           <HStack justifyContent="space-between" marginBottom={1}>
@@ -27,8 +27,8 @@ const GameCard = ({ game }: GameCardProps) => {
           <Rating rating={game.rating_top} />
           <Heading fontSize="2xl">{game.name}</Heading>
         </CardBody>
-      </Card>
-    </Link>
+      </Link>
+    </Card>
   );
 };
 
